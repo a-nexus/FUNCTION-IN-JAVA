@@ -78,19 +78,44 @@
 
 //NEXT QUESTION MULTYPLYCATION OF TWO NUMBER BY FUNCTION OR METHOD
 
-import java.util.*;
+// import java.util.*;
+// public class Method{
+//     public static int multiply(int a,int b){
+//         int mul=a*b;
+//         return mul;
+//     }
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         System.out.print("Enter The First Value:");
+//         int a=sc.nextInt();
+//        System.out.print("Enter The Second Value:");
+//         int b=sc.nextInt();
+//         int mul=multiply(a,b);
+//         System.out.println(mul);
+//     }
+// }
+
+//NEXT QUESTION 
+//FINDING FACTORIAL USING FUNCTION
+
+import java .util.*;
 public class Method{
-    public static int multiply(int a,int b){
-        int mul=a*b;
-        return mul;
+    public static int findFactorial(int fact){
+        if(fact<0){
+            System.out.println("INVALID NUMBER");
+            return 0;
+        }
+        int sum=1,temp;
+        temp=fact;
+        for(int i=temp;i>0;i--){
+        sum=sum*i;
+        }
+        return sum;//SO HERE I RETURN THE VALUE OF THE SUM WHICH IS ACTAUALLY THE FACTORIAL OF THE NUMBER GIVEN BY THE USER WHICH IS GONE IN THE MAIN METHOD AND PRINT THE VALUE OF THE FACTORIAL
     }
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
-        System.out.print("Enter The First Value:");
-        int a=sc.nextInt();
-       System.out.print("Enter The Second Value:");
-        int b=sc.nextInt();
-        int mul=multiply(a,b);
-        System.out.println(mul);
+        System.out.print("ENTER THE NUMBER:");
+        int fact=sc.nextInt();
+        System.out.println("THE FACTORIAL OF THE NUMBER IS:"+findFactorial(fact));//HERE IS THE THE CALLING METHOD AND ALSO THE PRINTING AFTER THE RETURNED VALUE
     }
 }
