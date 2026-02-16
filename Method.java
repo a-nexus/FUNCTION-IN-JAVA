@@ -98,24 +98,93 @@
 //NEXT QUESTION 
 //FINDING FACTORIAL USING FUNCTION
 
-import java .util.*;
+// import java .util.*;
+// public class Method{
+//     public static int findFactorial(int fact){
+//         if(fact<0){
+//             System.out.println("INVALID NUMBER");
+//             return 0;
+//         }
+//         int sum=1,temp;
+//         temp=fact;
+//         for(int i=temp;i>0;i--){
+//         sum=sum*i;
+//         }
+//         return sum;//SO HERE I RETURN THE VALUE OF THE SUM WHICH IS ACTAUALLY THE FACTORIAL OF THE NUMBER GIVEN BY THE USER WHICH IS GONE IN THE MAIN METHOD AND PRINT THE VALUE OF THE FACTORIAL
+//     }
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         System.out.print("ENTER THE NUMBER:");
+//         int fact=sc.nextInt();
+//         System.out.println("THE FACTORIAL OF THE NUMBER IS:"+findFactorial(fact));//HERE IS THE THE CALLING METHOD AND ALSO THE PRINTING AFTER THE RETURNED VALUE
+//     }
+// }
+
+// ENTER 3 NUMBERS FROM THE USER & MAKE A FUNCTION TO PRINT THEIR AVERAGE.
+
+// import java.util.*;
+// public class Method{
+//     public static double average(int num){
+//         Scanner sc=new Scanner(System.in);
+//         double sum=0;
+//         double[] arr=new double[num];
+//         for(int i=0;i<num;i++){
+//             System.out.print((i+1)+"INDEXED VALUE=");
+//             arr[i]=sc.nextDouble();
+//          sum+=arr[i];
+              
+//         }
+//         return sum/num;
+//     }
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         System.out.print("ENTER THE NUMBER HOW MANY YOU WANT:");
+//         int value=sc.nextInt();
+//         System.out.println("THE AVERAGE IS="+average(value));
+//     }
+// }
+
+//2. WRITE A FUNCTION TO PRINT THE SUM OF ALL ODD NUMBERS FROM 1 TO N. 
+
+// import java.util.*;
+// public class Method{
+//     public static int oddSum(int num){
+//         int sum=0;
+//         for(int i=1;i<=num;i++){
+//             if(i%2!=0){
+//                 sum+=i;
+//             }
+//         }
+//         return sum;
+//     }
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         System.out.print("ENTER THE VALUE WHERE YOU WANT TO CHECK AND ADD THE ODD NUMBER:");
+//         int num=sc.nextInt();
+//         System.out.println("The Sum Of The Odd Numbers Between Your Given Number="+ oddSum(num));
+//     }
+// }
+
+// 3. WRITE A FUNCTION WHICH TAKES IN 2 NUMBERS AND RETURNS THE GREATER OF THOSE 
+//TWO.
+
+import java.util.*;
 public class Method{
-    public static int findFactorial(int fact){
-        if(fact<0){
-            System.out.println("INVALID NUMBER");
-            return 0;
+    public static int greaterNumber(int num,int num2){
+        if(num>num2){
+            return num;
+        }else{
+            return num2;
         }
-        int sum=1,temp;
-        temp=fact;
-        for(int i=temp;i>0;i--){
-        sum=sum*i;
-        }
-        return sum;//SO HERE I RETURN THE VALUE OF THE SUM WHICH IS ACTAUALLY THE FACTORIAL OF THE NUMBER GIVEN BY THE USER WHICH IS GONE IN THE MAIN METHOD AND PRINT THE VALUE OF THE FACTORIAL
     }
-    public static void main(String[] args){
+    public static void main(String [] args){
         Scanner sc=new Scanner(System.in);
-        System.out.print("ENTER THE NUMBER:");
-        int fact=sc.nextInt();
-        System.out.println("THE FACTORIAL OF THE NUMBER IS:"+findFactorial(fact));//HERE IS THE THE CALLING METHOD AND ALSO THE PRINTING AFTER THE RETURNED VALUE
+        System.out.print("ENTER THE FIRST NUMBER:");
+        int num1=sc.nextInt();
+         System.out.print("ENTER THE SECOND NUMBER:");
+        int num2=sc.nextInt();
+        System.out.println("THE GREATEST NUMBER="+greaterNumber(num1,num2));
+
+
     }
 }
