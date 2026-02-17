@@ -168,23 +168,45 @@
 // 3. WRITE A FUNCTION WHICH TAKES IN 2 NUMBERS AND RETURNS THE GREATER OF THOSE 
 //TWO.
 
-import java.util.*;
+// import java.util.*;
+// public class Method{
+//     public static int greaterNumber(int num,int num2){
+//         if(num>num2){
+//             return num;
+//         }else{
+//             return num2;
+//         }
+//     }
+//     public static void main(String [] args){
+//         Scanner sc=new Scanner(System.in);
+//         System.out.print("ENTER THE FIRST NUMBER:");
+//         int num1=sc.nextInt();
+//          System.out.print("ENTER THE SECOND NUMBER:");
+//         int num2=sc.nextInt();
+//         System.out.println("THE GREATEST NUMBER="+greaterNumber(num1,num2));
+
+
+//     }
+// }
+
+// Write a function that takes in age as input and returns if that person is eligible 
+// to vote or not. A person of age > 18 is eligible to vote. 
+
+import java .util.*;
 public class Method{
-    public static int greaterNumber(int num,int num2){
-        if(num>num2){
-            return num;
+    public static void eligibleChecking(int age){
+        if(age>=18){
+            System.out.println("YOU ARE ELIGIBLE FOR VOTING:");
         }else{
-            return num2;
+            System.out.println("NO YOU ARE NOT");
         }
-    }
-    public static void main(String [] args){
+
+    } 
+    public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
-        System.out.print("ENTER THE FIRST NUMBER:");
-        int num1=sc.nextInt();
-         System.out.print("ENTER THE SECOND NUMBER:");
-        int num2=sc.nextInt();
-        System.out.println("THE GREATEST NUMBER="+greaterNumber(num1,num2));
-
-
+        System.out.print("ENTER THE AGE");
+        int age=sc.nextInt();
+        eligibleChecking(age);
     }
+
 }
