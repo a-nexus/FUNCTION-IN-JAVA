@@ -192,21 +192,38 @@
 // Write a function that takes in age as input and returns if that person is eligible 
 // to vote or not. A person of age > 18 is eligible to vote. 
 
-import java .util.*;
-public class Method{
-    public static void eligibleChecking(int age){
-        if(age>=18){
-            System.out.println("YOU ARE ELIGIBLE FOR VOTING:");
-        }else{
-            System.out.println("NO YOU ARE NOT");
-        }
+// import java .util.*;
+// public class Method{
+//     public static void eligibleChecking(int age){
+//         if(age>=18){
+//             System.out.println("YOU ARE ELIGIBLE FOR VOTING:");
+//         }else{
+//             System.out.println("NO YOU ARE NOT");
+//         }
 
-    } 
+//     } 
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         System.out.print("ENTER THE AGE");
+//         int age=sc.nextInt();
+//         eligibleChecking(age);
+//     }
+
+// }
+
+
+// . WRITE AN INFINITE LOOP USING DO WHILE CONDITION. 
+
+
+import java.util.*;
+public class Method{
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
-        System.out.print("ENTER THE AGE");
-        int age=sc.nextInt();
-        eligibleChecking(age);
-    }
+        do{
+            if(2>1){
+                System.out.println("*");
 
+            }
+        }while(true);
+    }
 }
