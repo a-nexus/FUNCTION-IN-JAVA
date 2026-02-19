@@ -297,7 +297,7 @@ public class Method{
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
         int num;
-        System.out.print("ENTER THE NUMBER WHERE YOU WANT TO FIBANACCI SERIES:");
+        System.out.print("ENTER THE NUMBER WHERE YOU WANT TO FIBANACCI SERIES");
          num=sc.nextInt();
         int[] arr=new int[num];
         arr[0]=0;
