@@ -215,15 +215,101 @@
 // . WRITE AN INFINITE LOOP USING DO WHILE CONDITION. 
 
 
+// import java.util.*;
+// public class Method{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         do{
+//             if(2>1){
+//                 System.out.println("*");
+
+//             }
+//         }while(true);
+//     }
+// }
+
+
+//NEXT QUESTION
+//WRITE A PROGRAM TO ENTER THE NUMBERS TILL THE USER WANTS AND AT THE END IT 
+// SHOULD DISPLAY THE COUNT OF POSITIVE, NEGATIVE AND ZEROS ENTERED. 
+
+
+// import java.util.*;
+// public class Method{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         int pos=0,neg=0,zero=0;
+//        int i=0;
+//         System.out.print("ENTER THE NUMBER HOW MUCH YOU WANT TO ENTER:");
+//         int num=sc.nextInt();
+
+
+//         do{//SO IN THIS QUESTION WE USE DO WHILE LOOP BY 
+//             int num2=sc.nextInt();
+//             if(num2>0){
+//                 pos++;
+
+//             }else if(num2<0){
+//                 neg++;
+
+//             }else{
+//                 zero++;
+//             }
+//             i++;
+            
+//         }while(i<num);
+//         System.out.println("THE POSITIVE INTEGERS ARE:"+pos);
+//          System.out.println("THE NEGETIVE INTEGERS ARE:"+neg);
+//           System.out.println("THE ZERO ARE:"+zero);
+//     }
+// }
+
+
+//NEXT QUESTION
+//TWO NUMBERS ARE ENTERED BY THE USER, X AND N. WRITE A FUNCTION TO FIND 
+// THE VALUE OF ONE NUMBER RAISED TO THE POWER OF ANOTHER I.E. .X POWERS N 
+
+// import java.util.*;
+// import java.lang.Math;
+// public class Method{
+//     public static double displayPower(int x,int n){
+//     double power=Math.pow(x,n);
+//     return power;
+//     }
+//     public static void main(String[] args){
+//      Scanner sc=new Scanner(System.in);
+//      System.out.print("ENTER THE NUMBER:");
+//      int x=sc.nextInt();
+//      System.out.print("ENTER THE NUMBER WHICH YOU WANT TO GIVE POWER:");
+//      int n=sc.nextInt();
+//      System.out.println("THE VALUE IS AFTER POWERING="+ displayPower(x,n));
+//     }
+// }
+
+
+//NEXT QUESTION
+//WRITE A PROGRAM TO PRINT FIBONACCI SERIES OF N TERMS WHERE N IS INPUT 
+// BY USER : 
+// 0 1 1 2 3 5 8 13 21 ... 
+
 import java.util.*;
 public class Method{
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
-        do{
-            if(2>1){
-                System.out.println("*");
+        int num;
+        System.out.print("ENTER THE NUMBER WHERE YOU WANT TO FIBANACCI SERIES:");
+         num=sc.nextInt();
+        int[] arr=new int[num];
+        arr[0]=0;
+        arr[1]=1;
+        for(int i=2;i<num;i++){
+            arr[i]=arr[i-1]+arr[i-2];
 
-            }
-        }while(true);
+        }
+        for(int i=0;i<num;i++){
+            System.out.print(arr[i]+"\t");
+        }
+
     }
 }
+ 
