@@ -292,24 +292,56 @@
 // BY USER : 
 // 0 1 1 2 3 5 8 13 21 ... 
 
+// import java.util.*;
+// public class Method{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         int num;
+//         System.out.print("ENTER THE NUMBER WHERE YOU WANT TO FIBANACCI SERIES");
+//          num=sc.nextInt();
+//         int[] arr=new int[num];
+//         arr[0]=0;
+//         arr[1]=1;
+//         for(int i=2;i<num;i++){
+//             arr[i]=arr[i-1]+arr[i-2];
+
+//         }
+//         for(int i=0;i<num;i++){
+//             System.out.print(arr[i]+"\t");
+//         }
+
+//     }
+// }
+
+//WRITE A PROGRAM IN JAVA THAT DEFINE THE CLASS STUDENT WITH THE FOLLOWING DETAILS AS VARIABLE WITHIN IT
+//USN,NAME,BRANCH,PHONE,PERCENTAGE.
+//WRITE A PROGRAM IN JAVA TO CREATE A STUDENT OBJECT AND PRINT THE USN,NAME,BRANCH,PHONE,PERCENTAGE OF THESE VARIABLE WITH SUITABLE HEADING 
+
 import java.util.*;
 public class Method{
-    public static void main(String[] args){
+    String usn;
+    String name;
+    String branch;
+    String phone;
+    double percentage;
+    public static void main(String[] arg){
         Scanner sc=new Scanner(System.in);
-        int num;
-        System.out.print("ENTER THE NUMBER WHERE YOU WANT TO FIBANACCI SERIES");
-         num=sc.nextInt();
-        int[] arr=new int[num];
-        arr[0]=0;
-        arr[1]=1;
-        for(int i=2;i<num;i++){
-            arr[i]=arr[i-1]+arr[i-2];
-
+        Method obj=new Method();
+          System.out.print("ENTER THE UNIVERSITY SEAT NUMBER=");
+          obj.usn=sc.nextLine();
+          System.out.print("ENTER YOUR NAME=");
+          obj.name=sc.nextLine();
+           System.out.print("ENTER YOUR BRANCH NAME=");
+          obj.branch=sc.nextLine();
+            System.out.print("ENTER YOUR PHONE NUMBER=");
+          obj.phone=sc.nextLine();
+            System.out.print("ENTER YOUR MARCSHEET PERCENTAGE=");
+          obj.percentage=sc.nextDouble(); 
+          System.out.println("-----------STUDENT INFO-----------");
+          System.out.println("USN="+obj.usn);
+          System.out.println("NAME="+obj.name);
+          System.out.println("BRANCH="+obj.branch);
+          System.out.println("PHONE="+obj.phone);
+          System.out.println("PERCENTAGE="+obj.percentage);
         }
-        for(int i=0;i<num;i++){
-            System.out.print(arr[i]+"\t");
-        }
-
-    }
 }
- 
