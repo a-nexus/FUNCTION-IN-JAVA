@@ -317,31 +317,72 @@
 //USN,NAME,BRANCH,PHONE,PERCENTAGE.
 //WRITE A PROGRAM IN JAVA TO CREATE A STUDENT OBJECT AND PRINT THE USN,NAME,BRANCH,PHONE,PERCENTAGE OF THESE VARIABLE WITH SUITABLE HEADING 
 
+// import java.util.*;
+// public class Method{
+//     String usn;
+//     String name;
+//     String branch;
+//     String phone;
+//     double percentage;
+//     public static void main(String[] arg){
+//         Scanner sc=new Scanner(System.in);
+//         Method obj=new Method();
+//           System.out.print("ENTER THE UNIVERSITY SEAT NUMBER=");
+//           obj.usn=sc.nextLine();
+//           System.out.print("ENTER YOUR NAME=");
+//           obj.name=sc.nextLine();
+//            System.out.print("ENTER YOUR BRANCH NAME=");
+//           obj.branch=sc.nextLine();
+//             System.out.print("ENTER YOUR PHONE NUMBER=");
+//           obj.phone=sc.nextLine();
+//             System.out.print("ENTER YOUR MARCSHEET PERCENTAGE=");
+//           obj.percentage=sc.nextDouble(); 
+//           System.out.println("-----------STUDENT INFO-----------");
+//           System.out.println("USN="+obj.usn);
+//           System.out.println("NAME="+obj.name);
+//           System.out.println("BRANCH="+obj.branch);
+//           System.out.println("PHONE="+obj.phone);
+//           System.out.println("PERCENTAGE="+obj.percentage);
+//         }
+// }
+
+//WRITE A PROGRAM TO CRATE A CLASS CALLED SHAPE WITH METHOD CALLED GETPARAMETER () & GETAREA  CREATE A SUBCLASS CALLED CIRCLE THAT OVERRIDE THE GET PARAMETER AND GETAREA () METHOD TO CALCUTE AREA & PERIMETER OF CIRCLE 
+
 import java.util.*;
-public class Method{
-    String usn;
-    String name;
-    String branch;
-    String phone;
-    double percentage;
-    public static void main(String[] arg){
-        Scanner sc=new Scanner(System.in);
-        Method obj=new Method();
-          System.out.print("ENTER THE UNIVERSITY SEAT NUMBER=");
-          obj.usn=sc.nextLine();
-          System.out.print("ENTER YOUR NAME=");
-          obj.name=sc.nextLine();
-           System.out.print("ENTER YOUR BRANCH NAME=");
-          obj.branch=sc.nextLine();
-            System.out.print("ENTER YOUR PHONE NUMBER=");
-          obj.phone=sc.nextLine();
-            System.out.print("ENTER YOUR MARCSHEET PERCENTAGE=");
-          obj.percentage=sc.nextDouble(); 
-          System.out.println("-----------STUDENT INFO-----------");
-          System.out.println("USN="+obj.usn);
-          System.out.println("NAME="+obj.name);
-          System.out.println("BRANCH="+obj.branch);
-          System.out.println("PHONE="+obj.phone);
-          System.out.println("PERCENTAGE="+obj.percentage);
+
+ class Shape{
+    public void getParameter(){
+        System.out.println("PARAMETER OF THE CIRCLE");
+    }
+    public void getArea(){
+        System.out.println("AREA OF THE CIRCLE");
+    }
+   
+    }
+     class Circle extends Shape{
+        double radius;
+        Circle(double r){
+            radius=r;
         }
+        @Override
+       public void getParameter(){
+            double parameter=2* Math.PI * radius;
+           System.out.println("PARAMETER OF THE CIRCLE="+parameter);
+        }
+        @Override
+        public void getArea(){
+            double area=Math.PI*radius*radius;
+            System.out.println("AREA OF THE CIRCLE="+area);
+        }
+ }
+public class Method{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+     System.out.print("ENTER THE RADIUS:");
+     double r=sc.nextDouble();
+        Circle obj=new Circle(r);
+        obj.getParameter();
+        obj.getArea();
+    }
+
 }
